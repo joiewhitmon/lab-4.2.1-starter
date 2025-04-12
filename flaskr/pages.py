@@ -25,7 +25,9 @@ def make_endpoints(app, backend):
         """Returns the home page."""
         return render_template("main.html",
                                page_name="Wiki Index",
-                               page_content="Welcome to the Wiki!")
+                               page_content="Welcome to Cats on Skis",
+                               message="We love Cats on Skis! This is the absolute best place to find information about cats on skis.",
+                               home_image="img/random-cat-skiing.jpeg")
 
     @app.route("/about")
     def about():

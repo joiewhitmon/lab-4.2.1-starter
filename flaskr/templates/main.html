@@ -29,6 +29,13 @@
     <!-- <div class="content"> -->
     <div>
         {% block content %}{{ page_content }}{% endblock %}
+        <p>{{ message }}</p>
+        {% if home_image %}
+    <div>
+        <img src="{{ url_for('static', filename=home_image) }}" alt="Cat skiing" style="max-width: 100%; height: auto; margin-top: 1em;">
+    </div>
+        {% endif %}
+
     </div>
 
 </body>
